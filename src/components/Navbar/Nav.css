@@ -1,0 +1,26 @@
+.navbar {
+  background: #f3f7f7;
+  box-shadow: 0px 6px 18.1px 2px rgba(0, 0, 0, 0.14); 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.logo img {
+  height: 40px; 
+}
+
+.company-name {
+  color: #31397e;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 12px; 
+  letter-spacing: -0.72px; 
+}
