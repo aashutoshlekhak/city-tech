@@ -52,15 +52,15 @@ export const Login = () => {
         console.log(responseData.data[0].jwt_token);
         localStorage.setItem("jwtToken", responseData.data[0].jwt_token);
         localStorage.setItem("username", responseData.data[0].full_name);
-        // localStorage.setItem(
-        //   "session_expire_time",
-        //   responseData.data[0].token_key_expires_on
-        // );
+        localStorage.setItem(
+          "session_expire_time",
+          responseData.data[0].token_key_expires_on
+        );
 
-        // just for session expiration testing purpose
-        const currentTime = new Date();
-        const expireTime = new Date(currentTime.getTime() + 5000); // 5 seconds in milliseconds
-        localStorage.setItem("session_expire_time", expireTime.toISOString());
+        // // just for session expiration testing purpose
+        // const currentTime = new Date();
+        // const expireTime = new Date(currentTime.getTime() + 5000); // 5 seconds in milliseconds
+        // localStorage.setItem("session_expire_time", expireTime.toISOString());
 
         toast.success("Successfully logged in!");
         navigate("/dashboard"); // Use navigate function to navigate to dashboard
